@@ -34,8 +34,8 @@ def client_write(text, filename):
 
 def client_read(filename):
     global file_version_map, client_id
-    print("read file version map")
-    print(file_version_map)
+    # print("read file version map")
+    # print(file_version_map)
     client_input="<read> " + filename
     if "<read>" in client_input:
         #while not new_lib.check_valid_input(client_input):    # error check the input

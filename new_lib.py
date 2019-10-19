@@ -144,9 +144,9 @@ def handle_write(filename, client_id, file_version_map, text):
         #print ("SENT FOR WRITE")
         reply_FS = client_socket.recv(1024)
         reply_FS = reply_FS.decode()
-        print("--------start Reply FS")
-        print(reply_FS)
-        print("end_replyFS")
+        # print("--------start Reply FS")
+        # print(reply_FS)
+        # print("end_replyFS")
         client_socket.close()
 
         print (reply_FS.split("...")[0])
@@ -213,13 +213,13 @@ def handle_read(filename, file_version_map, client_id):
         if not read_cache:
             reply_FS = client_socket.recv(1024)    # receive reply from file server, this will be the text from the file
             reply_FS = reply_FS.decode()
-            print("this is reply fs")
-            print(reply_FS)
+            # print("this is reply fs")
+            # print(reply_FS)
             client_socket.close()
 
             if reply_FS != "EMPTY_FILE":
                 print_breaker()
-                print (reply_FS)
+                # print (reply_FS)
                 print_breaker()
 
                 cache(filename_DS, reply_FS, "w", client_id)  # update the cached file with the new version from the file server

@@ -385,11 +385,11 @@ class TextEditor:                          # mix with menu/toolbar Frame class
         self.filelabel.config(text=str(name))
 
     def help(self):
-        showinfo('About PyEdit', 
-                 'PyEdit version %s\nOctober, 2000\n\n'
+        showinfo('About Editor', 
+                 'PyEdit version %s\nOctober, 2019\n\n'
                  'A text editor program\nand object component\n'
-                 'written in Python/Tk.\nProgramming Python 2E\n'
-                 "O'Reilly & Associates" % Version)
+                 'written in Python/Tk.\nPython GUI\n'
+                 "Neeraj, Dhaval, Ronit" % Version)
 
 
 ##################################################################
